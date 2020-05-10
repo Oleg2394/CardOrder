@@ -1,4 +1,3 @@
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
@@ -12,7 +11,6 @@ public class CardOrderTest {
     @Test
     void shouldSumbitRequest() {
         open("http://localhost:9999/");
-//        SelenideElement form = $("form[class='form form_size_m form_theme_alfa-on-white']");
         $("[data-test-id=name] input").setValue("Василий Иванов");
         $("[data-test-id=phone] input").setValue("+79270000000");
         $("[data-test-id=agreement]").click();

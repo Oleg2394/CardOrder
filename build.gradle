@@ -17,8 +17,7 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.1'
     testImplementation 'com.codeborne:selenide:5.11.0'
-    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
-
+    testCompile 'ch.qos.logback:logback-classic:1.2.3'
 }
 
 test {
